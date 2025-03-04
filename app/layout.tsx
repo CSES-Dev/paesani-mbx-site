@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Quicksand } from "next/font/google";
 import localFont from "next/font/local";
-import { NavBar, MobileNavBar } from "@/app/navbar";
+import { MobileNavBar, NavBar } from "@/app/navbar";
 import "./globals.css";
 
 const quicksand = Quicksand({ subsets: ["latin"] });

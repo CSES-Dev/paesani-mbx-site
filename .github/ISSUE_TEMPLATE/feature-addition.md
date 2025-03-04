@@ -3,8 +3,7 @@ name: Feature Addition
 about: Issue describing a new feature
 title: "[FEATURE]"
 labels: feature
-assignees: ''
-
+assignees: ""
 ---
 
 **Feature Name**

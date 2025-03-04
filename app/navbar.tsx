@@ -1,12 +1,12 @@
 "use client";
 
 import clsx from "clsx";
+import { AlignJustify } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
-import { AlignJustify } from "lucide-react";
 
 const links = [
     { name: "Home", href: "/" },
