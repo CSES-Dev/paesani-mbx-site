@@ -1,0 +1,89 @@
+{
+    "updates": [
+      {
+        "id": "oct-2024",
+        "title": "October 2024 (Version x.0)",
+        "releaseNotes": [
+          {
+            "type": "Security update",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore."
+          },
+          {
+            "type": "Update 1.5",
+            "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          }
+        ],
+        "newFeatures": [
+          "Feature A: Lorem ipsum dolor sit amet",
+          "Feature B: Excepteur sint occaecat cupidatat non proident"
+        ]
+      },
+      {
+        "id": "sep-2024",
+        "title": "September 2024",
+        "releaseNotes": [
+          {
+            "type": "Security patch",
+            "description": "Patch details here..."
+          }
+        ],
+        "newFeatures": [
+          "Feature A: Another new feature"
+        ]
+      },
+      {
+        "id": "aug-2024",
+        "title": "August 2024",
+        "releaseNotes": [],
+        "newFeatures": []
+      },
+      {
+        "id": "jul-2024",
+        "title": "July 2024",
+        "releaseNotes": [],
+        "newFeatures": []
+      },
+      {
+        "id": "jun-2024",
+        "title": "June 2024",
+        "releaseNotes": [],
+        "newFeatures": []
+      },
+      {
+        "id": "may-2024",
+        "title": "May 2024",
+        "releaseNotes": [],
+        "newFeatures": []
+      },
+      {
+        "id": "apr-2024",
+        "title": "April 2024",
+        "releaseNotes": [],
+        "newFeatures": []
+      },
+      {
+        "id": "mar-2024",
+        "title": "March 2024",
+        "releaseNotes": [],
+        "newFeatures": []
+      },
+      {
+        "id": "feb-2024",
+        "title": "February 2024",
+        "releaseNotes": [],
+        "newFeatures": []
+      },
+      {
+        "id": "jan-2024",
+        "title": "January 2024",
+        "releaseNotes": [],
+        "newFeatures": []
+      },
+      {
+        "id": "dec-2023",
+        "title": "December 2023",
+        "releaseNotes": [],
+        "newFeatures": []
+      }
+    ]
+  }
