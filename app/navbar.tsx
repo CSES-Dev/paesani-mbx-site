@@ -31,15 +31,11 @@ export function NavBar() {
     const isTutorialsActive = pathname.startsWith("/tutorials");
 
     return (
-        <div className="flex items-center justify-start bg-[#111840] p-1 text-white m-4 ml-8 mr-8 rounded-lg max-lg:text-sm">
-            <div className="flex space-x-5 lg:space-x-10 xl:space-x-14 items-center">
-                <Image
-                    src="/mbx-logo.png"
-                    width={93}
-                    height={41}
-                    alt="MBX logo"
-                    className="mr-0 lg:mr-4 xl:mr-16"
-                />
+        <div className="flex items-center justify-start bg-[#030625] p-1 xl:p-3 text-white m-4 ml-8 mr-8 rounded-lg text-sm xl:text-2xl">
+            <div className="flex space-x-5 lg:space-x-10 xl:space-x-16 items-center">
+                <div className="w-[93px] h-[41px] xl:w-[120px] xl:h-[53px] mr-0 lg:mr-4 xl:mr-16 relative">
+                    <Image src="/mbx-logo.png" alt="MBX logo" fill className="object-contain" />
+                </div>
                 {links.map((link) => {
                     const isActive =
                         link.name === "Tutorials" ? isTutorialsActive : pathname === link.href;
@@ -56,7 +52,7 @@ export function NavBar() {
                     );
                 })}
             </div>
-            <div className="ml-auto bg-[#3552F2] mr-2 p-1 pl-6 pr-6 rounded-[2rem]">
+            <div className="ml-auto bg-[#3552F2] mr-2 p-2 pl-6 pr-6 xl:pl-8 xl:pr-8 rounded-[2rem]">
                 <Link key="Download" href="/download" className="font-bold hover:text-[#5483BF]">
                     Download
                 </Link>
