@@ -1,7 +1,7 @@
 const Molecular = () => {
     return (
         <div
-            className="flex flex-col items-center justify-center w-[75%] max-w-3xl mt-10 mb-10"
+            className="flex flex-col items-center justify-center w-[75%] max-w-7xl mt-10 mb-10"
             data-testid="home_heading"
         >
             <svg
