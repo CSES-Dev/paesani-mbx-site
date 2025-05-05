@@ -3,30 +3,10 @@
 import clsx from "clsx";
 import React, { useState } from "react";
 
-const faqs = [
-    {
-        question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-        answer: "Placeholder",
-    },
-    {
-        question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-        answer: "Placeholder",
-    },
-    {
-        question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-        answer: "Placeholder",
-    },
-    {
-        question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-        answer: "Placeholder",
-    },
-    {
-        question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-        answer: "Placeholder",
-    },
-];
+import data from "@/content/content.json";
 
 export default function FAQPage() {
+    const faqs = data.faq.items;
     const [openIndex, setOpenIndex] = useState<number | null>(null);
     const toggle = (i: number) => {
         setOpenIndex(openIndex === i ? null : i);

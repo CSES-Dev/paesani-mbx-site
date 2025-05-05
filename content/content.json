@@ -1,0 +1,175 @@
+{
+    "home": {
+        "subheading": "MBX is a C++ library that provides an interface for molecular dynamics (MD) drivers, such as LAMMPS and i-PI, to perform classical and path-integral molecular dynamics simulations using data-driven many-body potential energy functions (PEFs)",
+        "info_title": "What is MBX?",
+        "info": "MBX is a C++ library that provides an interface for molecular dynamics (MD) drivers, such as LAMMPS and i-Pl, to perform classical and path-integral molecular dynamics simulations using data-driven many-body potential energy functions (PEFs) [1]. The current version of MBX includes our MB-pol PEF for water and our MB-nrg PEFs for halide and alkali-metal ions, neat CO2 and mixed CO2/H2O mixtures, neat CH4 and mixed CH4/H2O mixtures, and neat NH3, as well as our MB-nrg PEFS for covalently bonded molecules such as alkanes and N-methyl acetamide.\n\nMBX acts as a client that returns MB-pol and MB-nrg energies and forces while the actual molecular dynamics is controlled by the MD driver. In the case of i-Pl, the communication between MBX and i-PI can be established in two ways: Internet and Unix domain sockets. Please refer to the i-PI manual for more details. For LAMMPS, the MBX interface is added through the combination of specific FIX and PAIR_STYLE commands. Please refer to the LAMMPS manual for more details.\n\nMBX can be downloaded from our GitHub page. The installation instructions, along with specific details about the interfaces with LAMMPS and i-PI, are included in the README file.\n\nQuestions about MBX and the interfaces with LAMMPS and i-PI should be posted on the MBX Google Group. For classical molecular dynamics simulations, we recommend using LAMMPS since it provides better performance with MBX. Since MBX is parallelized using both OpenMP and MPI, the specific combination of OMP threads and MPI tasks in the LAMMPS simulations is sensitive to the system's size.\n\nFor path-integral molecular dynamics simulations, we recommend using i-Pl since it provides a wide set of methods based on path integrals.\n\nThe structure and performance of the current version of MBX are described in Ref. [1]. MBX is under continued development and optimization. All updates are posted on this page and our GitHub page."
+    },
+    "publications": {
+        "items": [
+            {
+                "title":"[Publication Title Placeholder]",
+                "author":"[Author 1, Author 2, ...]",
+                "date":"1 January 2025",
+                "link":"https://www.google.com",
+                "link_title":"[Link Placeholder]",
+                "description":"[Short summary placeholder text describing the publication’s content...]",
+                "img_src":"/images/img_placeholder.jpg",
+                "img_alt":"image"
+            },
+            {
+                "title":"[Publication Title Placeholder]",
+                "author":"[Author 1, Author 2, ...]",
+                "date":"1 January 2025",
+                "link":"https://www.google.com",
+                "link_title":"[Link Placeholder]",
+                "description":"Lorem ipsum...",
+                "img_src":"/images/cool_photo.jpg",
+                "img_alt":"image"
+            }
+        ]
+    },
+    "faq": {
+        "items": [
+            {
+                "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                "answer": "Placeholder"
+            },
+            {
+                "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                "answer": "Placeholder"
+            },
+            {
+                "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                "answer": "Placeholder"
+            },
+            {
+                "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                "answer": "Placeholder"
+            },
+            {
+                "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                "answer": "Placeholder"
+            }
+        ]
+    },
+    "about": {
+        "current": [
+            {
+                "name": "John Doe",
+                "role": "Chemist",
+                "image": ""
+            },
+            {
+                "name": "Name",
+                "role": "Role",
+                "image": ""
+            },
+            {
+                "name": "Name",
+                "role": "Role",
+                "image": ""
+            },
+            {
+                "name": "Name",
+                "role": "Role",
+                "image": ""
+            },
+            {
+                "name": "Name",
+                "role": "Role",
+                "image": ""
+            },
+            {
+                "name": "Name",
+                "role": "Role",
+                "image": ""
+            }
+        ],
+        "former": [
+            {
+                "name": "Walter White",
+                "role": "Chemist",
+                "image": ""
+            },
+            {
+                "name": "Name",
+                "role": "Role",
+                "image": ""
+            },
+            {
+                "name": "Name",
+                "role": "Role",
+                "image": ""
+            },
+            {
+                "name": "Name",
+                "role": "Role",
+                "image": ""
+            },
+            {
+                "name": "Name",
+                "role": "Role",
+                "image": ""
+            },
+            {
+                "name": "Name",
+                "role": "Role",
+                "image": ""
+            }
+        ]
+    },
+    "download": {
+        "versions": [
+            {
+                "version": "1.1.1",
+                "date": "MM/DD/YYYY",
+                "size": "0.0MB",
+                "type": "[Text Here]",
+                "link": ""
+            },
+            {
+                "version": "1.1.1",
+                "date": "MM/DD/YYYY",
+                "size": "0.0MB",
+                "type": "[Text Here]",
+                "link": ""
+            },
+            {
+                "version": "1.1.1",
+                "date": "MM/DD/YYYY",
+                "size": "0.0MB",
+                "type": "[Text Here]",
+                "link": ""
+            },
+            {
+                "version": "1.1.1",
+                "date": "MM/DD/YYYY",
+                "size": "0.0MB",
+                "type": "[Text Here]",
+                "link": ""
+            },
+            {
+                "version": "1.1.1",
+                "date": "MM/DD/YYYY",
+                "size": "0.0MB",
+                "type": "[Text Here]",
+                "link": ""
+            },
+            {
+                "version": "1.1.1",
+                "date": "MM/DD/YYYY",
+                "size": "0.0MB",
+                "type": "[Text Here]",
+                "link": ""
+            },
+            {
+                "version": "1.1.1",
+                "date": "MM/DD/YYYY",
+                "size": "0.0MB",
+                "type": "[Text Here]",
+                "link": ""
+            }
+        ],
+        "bottom_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum."
+    }
+}

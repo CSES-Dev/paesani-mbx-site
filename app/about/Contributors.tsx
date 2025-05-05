@@ -1,10 +1,13 @@
 "use client"; // Mark this as a Client Component
 
 import React, { useState } from "react";
-import curData from "./about_placeholder_c.json";
-import forData from "./about_placeholder_f.json";
+//import curData from "./about_placeholder_c.json";
+//import forData from "./about_placeholder_f.json";
+import data from "@/content/content.json"
 
 export default function Contributors() {
+    const curData = data.about.current;
+    const forData = data.about.former;
     const [activeTab, setActiveTab] = useState("current");
     const contributors = activeTab === "current" ? curData : forData;
 

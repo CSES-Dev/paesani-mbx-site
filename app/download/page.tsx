@@ -1,9 +1,10 @@
 import React from "react";
 
 // Placeholder data for downloads table
-import data from "./downloadPlaceholder.json";
+import content from "@/content/content.json";
 
 export default function Download() {
+    const data = content.download.versions;
     return (
         <div className="bg-[#030625] text-white min-h-screen h-full rounded-[40px] m-[20px] md:m-[70px]">
             <div className="flex flex-col px-[20px] py-[40px] md:px-[80px] md:py-[80px]">
@@ -80,8 +81,7 @@ export default function Download() {
                 <div className="flex flex-col pt-[50px]">
                     <h3 className="text-2xl font-bold pb-[30px]">Packages</h3>
                     <p className="text-sm">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        fermentum.
+                        {content.download.bottom_description}
                     </p>
                 </div>
             </div>
