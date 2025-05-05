@@ -2,7 +2,8 @@
     "updates": [
       {
         "id": "oct-2024",
-        "title": "October 2024 (Version x.0)",
+        "version": "Version x.0",
+        "date": "October 2024",
         "releaseNotes": [
           {
             "type": "Security update",
@@ -20,7 +21,8 @@
       },
       {
         "id": "sep-2024",
-        "title": "September 2024",
+        "version": "Version x-1.0",
+        "date": "September 2024",
         "releaseNotes": [
           {
             "type": "Security patch",
@@ -33,55 +35,27 @@
       },
       {
         "id": "aug-2024",
-        "title": "August 2024",
-        "releaseNotes": [],
+        "version": "Version x-1.1",
+        "date": "August 2024",
+        "releaseNotes": [
+          {
+            "type": "Minor update",
+            "description": "Minor update details here..."
+          }
+        ],
         "newFeatures": []
       },
       {
         "id": "jul-2024",
-        "title": "July 2024",
-        "releaseNotes": [],
-        "newFeatures": []
-      },
-      {
-        "id": "jun-2024",
-        "title": "June 2024",
-        "releaseNotes": [],
-        "newFeatures": []
-      },
-      {
-        "id": "may-2024",
-        "title": "May 2024",
-        "releaseNotes": [],
-        "newFeatures": []
-      },
-      {
-        "id": "apr-2024",
-        "title": "April 2024",
-        "releaseNotes": [],
-        "newFeatures": []
-      },
-      {
-        "id": "mar-2024",
-        "title": "March 2024",
-        "releaseNotes": [],
-        "newFeatures": []
-      },
-      {
-        "id": "feb-2024",
-        "title": "February 2024",
-        "releaseNotes": [],
-        "newFeatures": []
-      },
-      {
-        "id": "jan-2024",
-        "title": "January 2024",
+        "version": "Version x-1.2",
+        "date": "July 2024",
         "releaseNotes": [],
         "newFeatures": []
       },
       {
         "id": "dec-2023",
-        "title": "December 2023",
+        "version": "Version x-2.0",
+        "date": "December 2023",
         "releaseNotes": [],
         "newFeatures": []
       }

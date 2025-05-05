@@ -1,41 +1,58 @@
 "use client";
 
-import React, { useState } from "react";
-import UpdateSidebar from "./update_sidebar";
+import React from "react";
+
+type ReleaseNote = { type: string; description: string };
+type UpdateItem = {
+  id: string;
+  version: string;
+  date: string;
+  releaseNotes?: ReleaseNote[];
+  newFeatures?: string[];
+};
 
 type UpdatesContentProps = {
   updatesData: {
-    updates: {
-      id: string;
-      title: string;
-      releaseNotes?: { type: string; description: string }[];
-      newFeatures?: string[];
-    }[];
+    updates: UpdateItem[];
   };
-}
+  selectedId: string;
+};
 
-export default function UpdatesContent({ updatesData }: UpdatesContentProps) {
-  const [selectedId, setSelectedId] = useState("oct-2024"); // default selection
-
+export default function UpdatesContent({ updatesData, selectedId }: UpdatesContentProps) {
   const selectedUpdate = updatesData.updates.find(u => u.id === selectedId);
 
   return (
-    <div className="flex flex-col md:flex-row px-[20px] py-[40px] md:px-[80px] md:py-[80px] gap-8">
-      <UpdateSidebar 
-        selectedId={selectedId} 
-        onSelect={(id: string) => { setSelectedId(id); }} 
-        updates={updatesData.updates}
-      />
-      <div className="flex-1">
-        {selectedUpdate ? (
-          <>
-            <h1 className="text-2xl font-bold mb-6">{selectedUpdate.title}</h1>
-            {/* Render update details */}
-          </>
-        ) : (
-          <p>No update selected.</p>
-        )}
-      </div>
+    <div>
+      {selectedUpdate ? (
+        <>
+          <h1 className="text-2xl font-bold mb-2">{selectedUpdate.version}</h1>
+          <div className="text-gray-400 mb-6">{selectedUpdate.date}</div>
+          {selectedUpdate.releaseNotes && selectedUpdate.releaseNotes.length > 0 && (
+            <div className="mb-6">
+              <h2 className="text-xl font-semibold mb-2">Release Notes</h2>
+              <ul className="list-disc pl-6 space-y-2">
+                {selectedUpdate.releaseNotes.map((note, idx) => (
+                  <li key={idx}>
+                    <span className="font-bold">{note.type}:</span> {note.description}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+          {selectedUpdate.newFeatures && selectedUpdate.newFeatures.length > 0 && (
+            <div className="mb-6">
+              <h2 className="text-xl font-semibold mb-2">New Features</h2>
+              <ul className="list-disc pl-6 space-y-2">
+                {selectedUpdate.newFeatures.map((feature, idx) => (
+                  <li key={idx}>{feature}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </>
+      ) : (
+        <p>No update selected.</p>
+      )}
     </div>
   );
 }

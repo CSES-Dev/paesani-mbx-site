@@ -4,7 +4,7 @@ import React from "react";
 
 type UpdateItem = {
   id: string;
-  title: string;
+  version: string;
 }
 
 type UpdateSidebarProps = {
@@ -29,7 +29,7 @@ export default function UpdateSidebar({ selectedId, onSelect, updates }: UpdateS
                     : "bg-transparent hover:bg-[#1E1F4B]"
                 }`}
             >
-              {item.title}
+              {item.version}
             </button>
           </li>
         ))}
